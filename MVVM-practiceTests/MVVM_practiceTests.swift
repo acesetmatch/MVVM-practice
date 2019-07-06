@@ -19,16 +19,20 @@ class MVVM_practiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCourseViewModel() {
+        let course = Course(id: 0, name: "My Course Name", number_of_lessons: 10)
+        let courseViewModel = CourseViewModal(course: course)
+        
+        XCTAssertEqual(course.name, courseViewModel.name)
+        XCTAssertEqual("Lessons: \(course.number_of_lessons)", courseViewModel.detailTextString)
+        XCTAssertEqual(.none, courseViewModel.accessoryType)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testCourseViewModelLessonsOverThreshold() {
+        let course = Course(id: 0, name: "My Course Name", number_of_lessons: 100)
+        let courseViewModel = CourseViewModal(course: course)
+        XCTAssertEqual("Lessonss 30+ Check it Out!", courseViewModel.detailTextString)
+        XCTAssertEqual(.detailDisclosureButton, courseViewModel.accessoryType)
     }
 
 }

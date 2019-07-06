@@ -14,6 +14,12 @@
 		192A063722CFFAEB0065372E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192A063622CFFAEB0065372E /* Assets.xcassets */; };
 		192A063A22CFFAEB0065372E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192A063822CFFAEB0065372E /* LaunchScreen.storyboard */; };
 		192A064522CFFAEB0065372E /* MVVM_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A064422CFFAEB0065372E /* MVVM_practiceTests.swift */; };
+		192A065322CFFB2B0065372E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A065222CFFB2B0065372E /* Course.swift */; };
+		192A065522CFFB860065372E /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A065422CFFB860065372E /* CourseCell.swift */; };
+		192A065822D0006B0065372E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A065722D0006B0065372E /* UIColor+Extensions.swift */; };
+		192A065A22D000C00065372E /* CoursesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A065922D000C00065372E /* CoursesController.swift */; };
+		192A065D22D007600065372E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A065C22D007600065372E /* Service.swift */; };
+		192A066022D008460065372E /* CourseViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A065F22D008460065372E /* CourseViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		192A064022CFFAEB0065372E /* MVVM-practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-practiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		192A064422CFFAEB0065372E /* MVVM_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_practiceTests.swift; sourceTree = "<group>"; };
 		192A064622CFFAEB0065372E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192A065222CFFB2B0065372E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		192A065422CFFB860065372E /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		192A065722D0006B0065372E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		192A065922D000C00065372E /* CoursesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesController.swift; sourceTree = "<group>"; };
+		192A065C22D007600065372E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		192A065F22D008460065372E /* CourseViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 		192A062B22CFFAE80065372E /* MVVM-practice */ = {
 			isa = PBXGroup;
 			children = (
+				192A065E22D008360065372E /* ViewModal */,
+				192A064F22CFFB030065372E /* Model */,
+				192A065122CFFB110065372E /* Controller */,
+				192A065022CFFB0C0065372E /* View */,
+				192A065B22D007510065372E /* Service */,
+				192A065622D0004D0065372E /* Extensions */,
 				192A062C22CFFAE80065372E /* AppDelegate.swift */,
 				192A062E22CFFAE80065372E /* ViewController.swift */,
 				192A063022CFFAE80065372E /* Main.storyboard */,
@@ -97,6 +115,54 @@
 				192A064622CFFAEB0065372E /* Info.plist */,
 			);
 			path = "MVVM-practiceTests";
+			sourceTree = "<group>";
+		};
+		192A064F22CFFB030065372E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				192A065222CFFB2B0065372E /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		192A065022CFFB0C0065372E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				192A065422CFFB860065372E /* CourseCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		192A065122CFFB110065372E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				192A065922D000C00065372E /* CoursesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		192A065622D0004D0065372E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				192A065722D0006B0065372E /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		192A065B22D007510065372E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				192A065C22D007600065372E /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		192A065E22D008360065372E /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				192A065F22D008460065372E /* CourseViewModal.swift */,
+			);
+			path = ViewModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192A065322CFFB2B0065372E /* Course.swift in Sources */,
+				192A065D22D007600065372E /* Service.swift in Sources */,
+				192A065822D0006B0065372E /* UIColor+Extensions.swift in Sources */,
 				192A062F22CFFAE80065372E /* ViewController.swift in Sources */,
 				192A063522CFFAE80065372E /* MVVM_practice.xcdatamodeld in Sources */,
 				192A062D22CFFAE80065372E /* AppDelegate.swift in Sources */,
+				192A065522CFFB860065372E /* CourseCell.swift in Sources */,
+				192A065A22D000C00065372E /* CoursesController.swift in Sources */,
+				192A066022D008460065372E /* CourseViewModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
